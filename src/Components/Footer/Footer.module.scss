@@ -1,0 +1,8 @@
+@use "../../assets/scss/variables_mixins.scss" as *;
+
+footer {
+    @include flex-center;
+    font-size: 16px;
+    background-color: #0f172a;
+    color: #ffffff;
+}
