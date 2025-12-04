@@ -1,0 +1,109 @@
+@use "../../assets/scss/variables_mixins.scss" as *;
+
+.header {
+    @include flex-space-between-center;
+    position: fixed;
+    width: 100vw;
+    background-color: $primary-color;
+    padding-left: 1rem;
+
+    @media (min-width: $min-width-desktop) {
+        padding-left: 2rem;
+    }
+}
+
+.navbar {
+    display: block;
+
+    &__list {
+        @include flex-column-center(40px);
+        position: fixed;
+        right: -100vw;
+        bottom: 0;
+        @include box-size(100vw, 100vh);
+        background-color: $primary-color;
+        visibility: hidden;
+        transition: all 800ms ease-out;
+
+        &--item {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: -20px;
+                transform: translateX(-50%);
+                @include box-size(20px, 2px);
+                background-color: #ffffff;
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+        }
+
+        &--link {
+            display: block;
+            font-size: 22px;
+            color: #ffffff;
+        }
+    }
+
+    &__burger {
+        display: block;
+        position: fixed;
+        @include box-size(40px, 30px);
+        top: 1.5rem;
+        right: 1rem;
+        @include reset-button-style;
+
+        @media (min-width: $min-width-desktop) {
+            right: 2rem;
+        }
+
+        &--bar,
+        &--bar::before,
+        &--bar::after {
+            display: block;
+            @include box-size(100%, 3px);
+            position: relative;
+            border-radius: 3px;
+            background-color: #ffffff;
+            transition: all 500ms ease-in-out;
+        }
+
+        &--bar::before,
+        &--bar::after {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        &--bar::before {
+            transform: translateY(-12px);
+        }
+
+        &--bar::after {
+            transform: translateY(12px);
+        }
+    }
+}
+
+.show-nav .navbar__list {
+    right: 0;
+    width: 100vw;
+    visibility: visible;
+}
+
+.show-nav .navbar__burger--bar {
+    background: transparent;
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
