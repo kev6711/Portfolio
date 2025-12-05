@@ -1,6 +1,6 @@
 @use "../../assets/scss/variables_mixins.scss" as *;
 
-.header {
+header {
     @include flex-space-between-center;
     width: 100vw;
     background-color: $primary-color;
@@ -9,10 +9,15 @@
     @media (min-width: $min-width-desktop) {
         padding-left: 2rem;
     }
+
+    img {
+        @include box-size(80px, 80px);
+    }
 }
 
 .navbar {
     display: block;
+    height: 80px;
 
     &__list {
         @include flex-column-center(40px);

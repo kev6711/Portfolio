@@ -1,4 +1,5 @@
 import styles from "./Header.module.scss"
+import logo from "../../assets/images/logo_transparent.png"
 import { useState } from "react"
 
 function Header() {
@@ -8,10 +9,8 @@ function Header() {
         setIsOpen(!isOpen)
     }
     return (
-        <header className={styles.header}>
-            <h1>
-                Portfolio <br /> Kevin Heckenmeyer
-            </h1>
+        <header>
+            <img src={logo} alt="logo Portfolio Kevin Heckenmeyer" />
             <nav className={`${styles.navbar} ${isOpen ? styles["show-nav"] : ""}`}>
                 <ul className={styles["navbar__list"]}>
                     <li className={styles["navbar__list--item"]}>
