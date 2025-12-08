@@ -11,13 +11,37 @@ body {
     margin: 0;
 }
 
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 h1 {
     font-family: "Poppins";
     font-size: 22px;
     font-weight: 600;
     line-height: 120%;
-    color: $main-text-color;
     margin: 0;
+}
+
+h2 {
+    font-family: "Poppins";
+    font-size: 20px;
+    line-height: 130%;
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    &::after {
+        content: "";
+        display: block;
+        @include box-size(30%, 2px);
+        background-color: $main-text-color;
+        margin-top: 6px;
+    }
+}
+
+p {
+    color: $secondary-text-color;
 }
 
 ul {

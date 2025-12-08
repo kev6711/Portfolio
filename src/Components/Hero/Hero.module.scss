@@ -2,7 +2,6 @@
 
 .hero {
     @include flex-column(10px);
-    padding: 20px;
 
     &__description {
         color: $secondary-text-color;
@@ -20,7 +19,7 @@
         margin-top: 10px;
 
         a {
-            @include box-size(60%, 30px);
+            @include box-size(65%, 30px);
             @include flex-align-center(10px);
             background-color: $cta-background-color;
             color: #ffffff;
