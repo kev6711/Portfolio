@@ -28,8 +28,7 @@ function A_propos() {
                 pour créer des interfaces modernes, accessibles et orientées utilisateur.
                 <br />
                 Je suis motivé par l’idée de contribuer à des projets concrets, d’apprendre en continu et de monter en
-                compétence dans l’écosystème
-                <strong>JavaScript/React</strong>.
+                compétence dans l’écosystème <strong>JavaScript/React</strong>.
             </p>
         </section>
     )

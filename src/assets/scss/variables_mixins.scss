@@ -9,12 +9,16 @@ $secondary-color: #000000;
 $card-background-color: #f6f6f6;
 $cta-background-color: #1d4ed8;
 $cta-hover-background-color: #1e40af;
+$fa-star-active-color: #60a5fa;
 
 $mobile-media-querie: 1024px;
 $min-width-desktop: 1024px;
 $card-title-adaptation: 1230px;
 
 $banner-container-radius: 25px;
+
+$transform-skills-duration: 1000ms;
+$animation-soft-skills-delay: $transform-skills-duration;
 
 // Mixins //
 
@@ -77,4 +81,9 @@ $banner-container-radius: 25px;
     background: unset;
     border: none;
     cursor: pointer;
+}
+
+@mixin transform-skills {
+    transform-origin: top;
+    transform: scaleY(0);
 }

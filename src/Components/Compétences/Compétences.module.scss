@@ -1,0 +1,33 @@
+@use "../../assets/scss/variables_mixins.scss" as *;
+
+.skills {
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: $primary-color;
+        padding: 10px;
+        border-radius: 5px;
+        color: #ffffff;
+    }
+}
+
+.hard-skills,
+.soft-skills {
+    @include flex-column-center;
+    margin-bottom: 10px;
+    @include transform-skills;
+    animation: skills $transform-skills-duration ease-in-out forwards;
+}
+
+.soft-skills {
+    animation-delay: $animation-soft-skills-delay;
+}
+
+@keyframes skills {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}

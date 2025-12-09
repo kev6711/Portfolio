@@ -1,0 +1,22 @@
+@use "../../../assets/scss/variables_mixins.scss" as *;
+
+.hard-skills__items {
+    @include flex-align-center(30px);
+    margin-bottom: 15px;
+
+    img {
+        @include box-size(40px, 40px);
+    }
+
+    &--rating {
+        @include flex-align-center(5px);
+        :global(.fa-solid.fa-star) {
+            color: lightblue;
+            font-size: 20px;
+        }
+
+        :global(.fa-solid.fa-star).active {
+            color: #60a5fa;
+        }
+    }
+}
