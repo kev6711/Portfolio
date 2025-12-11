@@ -6,16 +6,16 @@ function Card() {
     return (
         <div className={styles.cards}>
             {projects.map((project) => (
-                <>
+                <div
+                    key={project.id}
+                    className={styles["cards__item"]}>
                     <h3 className={styles["cards__title"]}>
                         {project.title}
                     </h3>
                     <p className={styles["cards__description"]}>
                         {project.description}
                     </p>
-                    <Link
-                        key={project.id}
-                        to={`/projet/${project.id}`}>
+                    <Link to={`/projet/${project.id}`}>
                         <article className={styles.card}>
                             <img
                                 className={styles["card__cover"]}
@@ -23,9 +23,9 @@ function Card() {
                                 alt={project.title}
                             />
                             <div className={styles["card__tags"]}>
-                                {project.stack.map((tag) => (
+                                {project.stack.map((tag, index) => (
                                     <p
-                                        key={tag}
+                                        key={index}
                                         className={
                                             styles["card__tags--tag"]
                                         }>
@@ -35,7 +35,7 @@ function Card() {
                             </div>
                         </article>
                     </Link>
-                </>
+                </div>
             ))}
         </div>
     )

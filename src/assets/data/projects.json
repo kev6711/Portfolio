@@ -4,7 +4,7 @@
         "title": "ohmyfood",
         "cover": "/images/ohmyfood_1.jpg",
         "description": "Site mobile-first et responsive construit avec Sass",
-        "contexte": "OhMyFood, jeune startup déjà implantée à New York, souhaite s’étendre à Paris avec un site permettant de consulter et composer des menus gastronomiques avant l’arrivée au restaurant. L’entreprise doit convaincre de nouveaux restaurateurs en proposant une plateforme moderne, rapide et fiable. Le projet nécessite de respecter des maquettes fournies par l’UX designer et d’assurer une expérience utilisateur optimale sur mobile, tablette et desktop.",
+        "contexte": "OhMyFood, jeune startup déjà implantée à New York, souhaite s’étendre à Paris avec un site permettant de consulter et composer des menus gastronomiques avant l’arrivée au restaurant.\n L’entreprise doit convaincre de nouveaux restaurateurs en proposant une plateforme moderne, rapide et fiable.\n Le projet nécessite de respecter des maquettes fournies par l’UX designer et d’assurer une expérience utilisateur optimale sur mobile, tablette et desktop.",
         "objectifs": [
             "Développer un site mobile-first, totalement responsive, respectant fidèlement les maquettes Figma.",
             "Mettre en place un système de consultation et composition de menus gastronomiques.",
@@ -38,8 +38,8 @@
             "Ajouter un dark mode ou des préférences d’affichage.",
             "Améliorer performance, accessibilité et SEO en effectuant un audit complet (Lighthouse, WAVE)."
         ],
-        "dépôt Github": "https://github.com/kev6711/Projet4_ohmyfood.git",
-        "Github Pages": "https://kev6711.github.io/Projet4_ohmyfood/"
+        "dépôtGithub": "https://github.com/kev6711/Projet4_ohmyfood.git",
+        "githubPages": "https://kev6711.github.io/Projet4_ohmyfood/"
     },
     {
         "id": "2",
@@ -79,8 +79,8 @@
             "Mettre en place des tests unitaires ou fonctionnels pour fiabiliser l’application.",
             "Optimiser les performances (compression images, lazy loading)."
         ],
-        "dépôt Github": "https://github.com/kev6711/Projet6_portfolio_architecte_sophie_bluel.git",
-        "Github Pages": "https://kev6711.github.io/Projet6_portfolio_architecte_sophie_bluel/"
+        "dépôtGithub": "https://github.com/kev6711/Projet6_portfolio_architecte_sophie_bluel.git",
+        "githubPages": "https://kev6711.github.io/Projet6_portfolio_architecte_sophie_bluel/"
     },
     {
         "id": "3",
@@ -125,8 +125,8 @@
             "Implémenter un système de cache plus efficace.",
             "Ajouter un système de génération automatique d’images optimisées."
         ],
-        "dépôt Github": "https://github.com/kev6711/Projet8_nina_carducci_seo.git",
-        "Github Pages": "https://kev6711.github.io/Projet8_nina_carducci_seo/"
+        "dépôtGithub": "https://github.com/kev6711/Projet8_nina_carducci_seo.git",
+        "githubPages": "https://kev6711.github.io/Projet8_nina_carducci_seo/"
     },
     {
         "id": "4",
@@ -163,7 +163,7 @@
             "Améliorer l’expérience utilisateur du futur module de transactions (filtres, tri, pagination).",
             "Ajouter un système de génération automatique d’images optimisées."
         ],
-        "dépôt Github": "https://github.com/kev6711/Projet10_argent_bank.git",
-        "Github Pages": ""
+        "dépôtGithub": "https://github.com/kev6711/Projet10_argent_bank.git",
+        "githubPages": ""
     }
 ]

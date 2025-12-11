@@ -13,6 +13,17 @@ header {
     img {
         @include box-size(80px, 80px);
     }
+
+    .backArrowlink {
+        @include flex-center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        :global(.fa-solid) {
+            font-size: 35px;
+            color: #ffffff;
+        }
+    }
 }
 
 .navbar {
