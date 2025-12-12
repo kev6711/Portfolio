@@ -1,0 +1,35 @@
+@use "../../assets/scss/variables_mixins.scss" as *;
+
+.career {
+    h3 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: #2563eb;
+        padding: 10px;
+        border-radius: 5px;
+        color: #ffffff;
+    }
+
+    &__training {
+        @include flex-column(20px);
+        margin-bottom: 40px;
+
+        li {
+            position: relative;
+            color: $secondary-text-color;
+            text-align: justify;
+            padding-left: 25px;
+
+            &::before {
+                content: "\f19d";
+                font-family: "Font Awesome 6 Free";
+                @include text-font(900, 14px);
+                position: absolute;
+                top: 2px;
+                left: 0;
+                color: $primary-color;
+            }
+        }
+    }
+}
