@@ -121,31 +121,7 @@ function Header() {
                                     className={
                                         styles["navbar__list--link"]
                                     }>
-                                    Certification
-                                </a>
-                            </li>
-                            <li
-                                className={
-                                    styles["navbar__list--item"]
-                                }>
-                                <a
-                                    href="/"
-                                    className={
-                                        styles["navbar__list--link"]
-                                    }>
-                                    Hobbies
-                                </a>
-                            </li>
-                            <li
-                                className={
-                                    styles["navbar__list--item"]
-                                }>
-                                <a
-                                    href="/"
-                                    className={
-                                        styles["navbar__list--link"]
-                                    }>
-                                    Ressources
+                                    Loisirs
                                 </a>
                             </li>
                             <li

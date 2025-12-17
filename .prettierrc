@@ -1,7 +1,7 @@
 {
     "semi": false,
     "tabWidth": 4,
-    "printWidth": 70,
+    "printWidth": 90,
     "bracketSameLine": true,
     "singleAttributePerLine": false,
 

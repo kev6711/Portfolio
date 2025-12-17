@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Les tendances majeures de React pour 2026",
+        "description": "Découvrez les grandes tendances autour de React et des meilleures pratiques de développement à suivre dans les mois à venir.",
+        "source": "https://octet.design/journal/reactjs-development-trends/",
+        "date": "25/11/2025"
+    },
+    {
+        "title": "Top tendances du développement web en 2026",
+        "description": "Focus sur les technologies front-end incontournables : IA, WASM, PWA, performances, architecture edge/serverless.",
+        "source": "https://www.wizwebitsolutions.com/tech-pulse/top-web-development-trends-to-watch",
+        "date": "01/10/2025"
+    },
+    {
+        "title": "Guide pratique du développement ReactJS (2025)",
+        "description": "Une synthèse des meilleures pratiques et stratégies modernes pour architecturer des apps React durables.",
+        "source": "https://www.weblineindia.com/fr/blog/reactjs-development-guide/",
+        "date": "03/07/2025"
+    }
+]
