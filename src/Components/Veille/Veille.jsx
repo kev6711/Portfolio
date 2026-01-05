@@ -21,6 +21,7 @@ function Veille() {
             <h2>Veille technologique</h2>
             <div className={styles["technological-watch__wrapper"]}>
                 <a
+                    key={i}
                     href={slideshow[i].source}
                     target="_blank"
                     className={styles["technological-watch__card"]}

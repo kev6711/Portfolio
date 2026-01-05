@@ -11,7 +11,8 @@
         color: #ffffff;
     }
 
-    &__training {
+    &__training,
+    &__experience {
         @include flex-column(20px);
         margin-bottom: 40px;
 
@@ -22,13 +23,28 @@
             padding-left: 25px;
 
             &::before {
-                content: "\f19d";
                 font-family: "Font Awesome 6 Free";
                 @include text-font(900, 14px);
                 position: absolute;
                 top: 2px;
                 left: 0;
                 color: $primary-color;
+            }
+        }
+    }
+
+    &__training {
+        li {
+            &::before {
+                content: "\f19d";
+            }
+        }
+    }
+
+    &__experience {
+        li {
+            &::before {
+                content: "\f0b1";
             }
         }
     }
