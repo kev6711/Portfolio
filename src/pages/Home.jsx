@@ -5,6 +5,7 @@ import Projets from "../components/Projets/Projets.jsx"
 import Parcours from "../components/Parcours/Parcours.jsx"
 import Veille from "../components/Veille/Veille.jsx"
 import Loisirs from "../components/Loisirs/Loisirs.jsx"
+import Contact from "../components/Contact/Contact.jsx"
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
             <Parcours />
             <Veille />
             <Loisirs />
+            <Contact />
         </main>
     )
 }

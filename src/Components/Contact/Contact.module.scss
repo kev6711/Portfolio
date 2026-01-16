@@ -1,0 +1,19 @@
+@use "../../assets/scss/variables_mixins.scss" as *;
+
+.contact {
+    background-color: $secondary-background-color;
+    margin-bottom: 0;
+
+    &__icons {
+        @include flex-space-between-center;
+        font-size: 45px;
+
+        i {
+            color: $cta-background-color;
+
+            &:hover {
+                color: $cta-hover-background-color;
+            }
+        }
+    }
+}
