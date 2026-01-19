@@ -1,7 +1,7 @@
 import styles from "./Projet.module.scss"
 import { useParams } from "react-router-dom"
-import projects from "../assets/data/projects.json"
-import ProjectListSection from "../components/ProjectListSection/ProjectListSection"
+import projects from "../../assets/data/projects.json"
+import ProjectListSection from "../../components/ProjectListSection/ProjectListSection"
 import { useEffect } from "react"
 
 function Projet() {

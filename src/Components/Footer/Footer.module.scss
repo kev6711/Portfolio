@@ -1,9 +1,17 @@
 @use "../../assets/scss/variables_mixins.scss" as *;
 
 footer {
-    @include flex-center;
+    @include flex-column-center;
     font-size: 12px;
     background-color: #0f172a;
+
+    .footer__legalMention {
+        color: #ffffff;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 
     p {
         color: #ffffff;

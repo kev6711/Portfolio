@@ -6,8 +6,12 @@ import Parcours from "../components/Parcours/Parcours.jsx"
 import Veille from "../components/Veille/Veille.jsx"
 import Loisirs from "../components/Loisirs/Loisirs.jsx"
 import Contact from "../components/Contact/Contact.jsx"
+import { useEffect } from "react"
 
 function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <main>
             <Hero />

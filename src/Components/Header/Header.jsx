@@ -6,6 +6,7 @@ import { useLocation, Link } from "react-router-dom"
 function Header() {
     const pathname = useLocation().pathname
     const isProjectPage = pathname.startsWith("/projet")
+    const isLegalMentionPage = pathname.startsWith("/mentions-legales")
     const [isOpen, setIsOpen] = useState(false)
 
     const handleisOpen = () => {
@@ -13,7 +14,7 @@ function Header() {
     }
     return (
         <header>
-            {isProjectPage ? (
+            {isProjectPage || isLegalMentionPage ? (
                 <Link to="/" className={styles.backArrowlink}>
                     <i className="fa-solid fa-arrow-left"></i>
                 </Link>

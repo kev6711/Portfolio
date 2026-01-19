@@ -1,4 +1,4 @@
-import styles from "../../pages/Projet.module.scss"
+import styles from "../../pages/Projet/Projet.module.scss"
 
 function ProjectListSection({ className, title, items }) {
     return (
