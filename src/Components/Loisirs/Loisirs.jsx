@@ -3,7 +3,7 @@ import styles from "./Loisirs.module.scss"
 
 function Loisirs() {
     return (
-        <section className={styles.hobbies}>
+        <section className={styles.hobbies} id="hobbies">
             <h2>Loisirs</h2>
             <Hobbies_item
                 icon={<i className="fa-solid fa-table-tennis-paddle-ball"></i>}

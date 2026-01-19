@@ -17,7 +17,7 @@ function Veille() {
     }, [isPaused])
 
     return (
-        <section className={styles["technological-watch"]}>
+        <section className={styles["technological-watch"]} id="technological-watch">
             <h2>Veille technologique</h2>
             <div className={styles["technological-watch__wrapper"]}>
                 <a

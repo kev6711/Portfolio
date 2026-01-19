@@ -4,8 +4,14 @@
     @include flex-align-center(30px);
     margin-bottom: 15px;
 
-    img {
-        @include box-size(40px, 40px);
+    &--logo {
+        @include box-size(55px, 40px);
+        @include flex-center;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
     }
 
     &--rating {

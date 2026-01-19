@@ -2,7 +2,7 @@ import styles from "./Contact.module.scss"
 
 function Contact() {
     return (
-        <section className={styles.contact}>
+        <section className={styles.contact} id="contact">
             <h2>Contact</h2>
             <p>Vous pouvez me contacter par mail ou via mes réseaux :</p>
             <div className={styles["contact__icons"]}>

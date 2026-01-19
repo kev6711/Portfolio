@@ -1,10 +1,12 @@
 @use "../../assets/scss/variables_mixins.scss" as *;
 
 header {
+    position: fixed;
     @include flex-space-between-center;
-    width: 100vw;
+    width: 100%;
     background-color: $primary-color;
     padding-left: 1rem;
+    z-index: 300;
 
     @media (min-width: $min-width-desktop) {
         padding-left: 2rem;
@@ -72,6 +74,7 @@ header {
         top: 1.5rem;
         right: 1rem;
         @include reset-button-style;
+        z-index: 200;
 
         @media (min-width: $min-width-desktop) {
             right: 2rem;
@@ -109,6 +112,7 @@ header {
     right: 0;
     width: 100vw;
     visibility: visible;
+    z-index: 100;
 }
 
 .show-nav .navbar__burger--bar {

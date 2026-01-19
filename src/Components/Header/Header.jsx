@@ -19,120 +19,73 @@ function Header() {
                 </Link>
             ) : (
                 <>
-                    <img
-                        src={logo}
-                        alt="logo Portfolio Kevin Heckenmeyer"
-                    />
+                    <img src={logo} alt="logo Portfolio Kevin Heckenmeyer" />
                     <nav
                         className={`${styles.navbar} ${
                             isOpen ? styles["show-nav"] : ""
                         }`}>
                         <ul className={styles["navbar__list"]}>
-                            <li
-                                className={
-                                    styles["navbar__list--item"]
-                                }>
+                            <li className={styles["navbar__list--item"]}>
                                 <a
-                                    href="/"
-                                    className={
-                                        styles["navbar__list--link"]
-                                    }>
+                                    href="#hero"
+                                    className={styles["navbar__list--link"]}
+                                    onClick={() => setIsOpen(false)}>
                                     Accueil
                                 </a>
                             </li>
-                            <li
-                                className={
-                                    styles["navbar__list--item"]
-                                }>
+                            <li className={styles["navbar__list--item"]}>
                                 <a
-                                    href="/"
-                                    className={
-                                        styles["navbar__list--link"]
-                                    }>
+                                    href="#a_propos"
+                                    className={styles["navbar__list--link"]}
+                                    onClick={() => setIsOpen(false)}>
                                     A propos
                                 </a>
                             </li>
-                            <li
-                                className={
-                                    styles["navbar__list--item"]
-                                }>
+                            <li className={styles["navbar__list--item"]}>
                                 <a
-                                    href="/"
-                                    className={
-                                        styles["navbar__list--link"]
-                                    }>
+                                    href="#skills"
+                                    className={styles["navbar__list--link"]}
+                                    onClick={() => setIsOpen(false)}>
                                     Compétences
                                 </a>
                             </li>
-                            <li
-                                className={
-                                    styles["navbar__list--item"]
-                                }>
+                            <li className={styles["navbar__list--item"]}>
                                 <a
-                                    href="/"
-                                    className={
-                                        styles["navbar__list--link"]
-                                    }>
+                                    href="#projets"
+                                    className={styles["navbar__list--link"]}
+                                    onClick={() => setIsOpen(false)}>
                                     Projets
                                 </a>
                             </li>
-                            <li
-                                className={
-                                    styles["navbar__list--item"]
-                                }>
+                            <li className={styles["navbar__list--item"]}>
                                 <a
-                                    href="/"
-                                    className={
-                                        styles["navbar__list--link"]
-                                    }>
-                                    Parcours
+                                    href="#career"
+                                    className={styles["navbar__list--link"]}
+                                    onClick={() => setIsOpen(false)}>
+                                    Mon Parcours
                                 </a>
                             </li>
-                            <li
-                                className={
-                                    styles["navbar__list--item"]
-                                }>
+                            <li className={styles["navbar__list--item"]}>
                                 <a
-                                    href="/"
-                                    className={
-                                        styles["navbar__list--link"]
-                                    }>
+                                    href="#technological-watch"
+                                    className={styles["navbar__list--link"]}
+                                    onClick={() => setIsOpen(false)}>
                                     Veille technologique
                                 </a>
                             </li>
-                            <li
-                                className={
-                                    styles["navbar__list--item"]
-                                }>
+                            <li className={styles["navbar__list--item"]}>
                                 <a
-                                    href="/"
-                                    className={
-                                        styles["navbar__list--link"]
-                                    }>
-                                    Témoignages
-                                </a>
-                            </li>
-                            <li
-                                className={
-                                    styles["navbar__list--item"]
-                                }>
-                                <a
-                                    href="/"
-                                    className={
-                                        styles["navbar__list--link"]
-                                    }>
+                                    href="#hobbies"
+                                    className={styles["navbar__list--link"]}
+                                    onClick={() => setIsOpen(false)}>
                                     Loisirs
                                 </a>
                             </li>
-                            <li
-                                className={
-                                    styles["navbar__list--item"]
-                                }>
+                            <li className={styles["navbar__list--item"]}>
                                 <a
-                                    href="/"
-                                    className={
-                                        styles["navbar__list--link"]
-                                    }>
+                                    href="#contact"
+                                    className={styles["navbar__list--link"]}
+                                    onClick={() => setIsOpen(false)}>
                                     Contact
                                 </a>
                             </li>
@@ -140,10 +93,7 @@ function Header() {
                         <button
                             className={styles["navbar__burger"]}
                             onClick={handleisOpen}>
-                            <span
-                                className={
-                                    styles["navbar__burger--bar"]
-                                }></span>
+                            <span className={styles["navbar__burger--bar"]}></span>
                         </button>
                     </nav>
                 </>

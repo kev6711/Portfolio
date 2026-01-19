@@ -2,7 +2,7 @@ import styles from "./Parcours.module.scss"
 
 function Parcours() {
     return (
-        <section className={styles.career}>
+        <section className={styles.career} id="career">
             <h2>Mon parcours</h2>
             <h3>Formations</h3>
             <ul className={styles["career__training"]}>
