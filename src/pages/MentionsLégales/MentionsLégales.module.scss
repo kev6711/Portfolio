@@ -1,6 +1,26 @@
 @use "../../assets/scss/variables_mixins.scss" as *;
 
+.legalMentions {
+    h2 {
+        @media (min-width: $min-width-tablet) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
 .legalMention__title {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.legalMention__site,
+.legalMention__hosting,
+.legalMention__right {
+    @media (min-width: $min-width-tablet) {
+        @include flex-column-center;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
 }

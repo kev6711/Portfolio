@@ -11,6 +11,14 @@
     }
 }
 
+.skills-wrapper {
+    @media (min-width: $min-width-tablet) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
+
 .hard-skills,
 .soft-skills {
     @include flex-column-center;

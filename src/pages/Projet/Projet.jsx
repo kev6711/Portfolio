@@ -11,7 +11,7 @@ function Projet() {
     const { id } = useParams()
     const projet = projects.find((projet) => projet.id === id)
     return (
-        <main>
+        <main className={styles["project-page"]}>
             <section className={styles.hero}>
                 <h1>{projet.title}</h1>
                 <p>{projet.description}</p>

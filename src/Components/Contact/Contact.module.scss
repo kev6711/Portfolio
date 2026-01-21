@@ -4,9 +4,24 @@
     background-color: $secondary-background-color;
     margin-bottom: 0;
 
+    p {
+        @media (min-width: $min-width-tablet) {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+
     &__icons {
         @include flex-space-between-center;
         font-size: 45px;
+
+        @media (min-width: $min-width-tablet) {
+            justify-content: space-around;
+        }
+
+        @media (min-width: $min-width-desktop) {
+            font-size: 60px;
+        }
 
         i {
             color: $cta-background-color;

@@ -5,7 +5,7 @@
 
     &__wrapper {
         position: relative;
-        @include flex-column-center;
+        @include flex-column;
     }
 
     &__card {
@@ -16,6 +16,14 @@
         position: relative;
         animation: slideFade 1000ms ease-in-out;
 
+        @media (min-width: $min-width-tablet) {
+            height: 280px;
+        }
+
+        @media (min-width: $min-width-desktop) {
+            height: 400px;
+        }
+
         &:hover {
             border-color: $card-hover-color;
         }
@@ -24,6 +32,14 @@
             @include box-size(100%, 100%);
             object-fit: cover;
             border-radius: 23px;
+
+            @media (min-width: $min-width-mobile-card-adjustment) {
+                object-position: center 27%;
+            }
+
+            @media (min-width: $min-width-tablet-card-adjustment) {
+                object-position: center 22%;
+            }
         }
 
         &--title {
@@ -34,6 +50,16 @@
             padding: 2px;
             text-align: center;
             width: 100%;
+
+            @media (min-width: $min-width-tablet) {
+                font-size: 18px;
+                bottom: 140px;
+            }
+
+            @media (min-width: $min-width-desktop) {
+                font-size: 22px;
+                bottom: 180px;
+            }
         }
 
         &--description {
@@ -44,6 +70,23 @@
             text-align: justify;
             padding-left: 5px;
             padding-right: 5px;
+
+            @media (min-width: $min-width-mobile-card-adjustment) {
+                bottom: 32%;
+            }
+
+            @media (min-width: $min-width-tablet) {
+                font-size: 14px;
+                bottom: 70px;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+
+            @media (min-width: $min-width-desktop) {
+                font-size: 18px;
+                bottom: 105px;
+            }
         }
 
         &--date {
@@ -52,6 +95,15 @@
             bottom: 30px;
             right: 20px;
             padding-left: 5px;
+
+            @media (min-width: $min-width-tablet) {
+                font-size: 13px;
+            }
+
+            @media (min-width: $min-width-desktop) {
+                font-size: 16px;
+                bottom: 50px;
+            }
         }
     }
 
@@ -68,6 +120,18 @@
             border-radius: 50%;
             background-color: #ffffff;
             cursor: pointer;
+
+            &:hover {
+                border-color: $cta-hover-background-color;
+            }
+
+            @media (min-width: $min-width-tablet) {
+                @include box-size(18px, 18px);
+            }
+
+            @media (min-width: $min-width-desktop) {
+                @include box-size(20px, 20px);
+            }
         }
 
         & .isActive {

@@ -1,5 +1,23 @@
 @use "../../assets/scss/variables_mixins.scss" as *;
 
+.project-page {
+    .context,
+    .goals,
+    .stack,
+    .skills,
+    .results,
+    .improvments {
+        @media (min-width: $min-width-tablet) {
+            @include flex-column-align-center;
+        }
+    }
+    h2 {
+        @media (min-width: $min-width-tablet) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
 .hero {
     @include flex-column-align-center(10px);
 
@@ -26,6 +44,14 @@
             border-radius: 20px;
             font-size: 14px;
             cursor: pointer;
+
+            @media (min-width: $min-width-tablet) {
+                font-size: 15px;
+            }
+
+            @media (min-width: $min-width-desktop) {
+                font-size: 16px;
+            }
 
             &:hover {
                 background-color: $cta-hover-background-color;
@@ -54,16 +80,33 @@ p {
         position: relative;
         color: $secondary-text-color;
         text-align: justify;
-        padding-left: 17px;
+        padding-left: 25px;
+        font-size: 16px;
+
+        @media (min-width: $min-width-tablet) {
+            font-size: 17px;
+        }
+
+        @media (min-width: $min-width-desktop) {
+            font-size: 18px;
+        }
 
         &::before {
             content: "\f140";
             font-family: "Font Awesome 6 Free";
-            @include text-font(900, 12px);
+            @include text-font(900, 14px);
             position: absolute;
-            top: 4px;
+            top: 3px;
             left: 0;
             color: #1e3a8a;
+
+            @media (min-width: $min-width-tablet) {
+                font-size: 15px;
+            }
+
+            @media (min-width: $min-width-desktop) {
+                font-size: 16px;
+            }
         }
     }
 }
@@ -71,6 +114,11 @@ p {
 .stack {
     .list-section {
         width: 60%;
+
+        @media (min-width: $min-width-tablet) {
+            margin: auto;
+            margin-bottom: 20px;
+        }
     }
     li {
         color: $tag-text-color;
@@ -81,6 +129,14 @@ p {
         border: 1px solid $tag-border-color;
         font-size: 16px;
         text-align: center;
+
+        @media (min-width: $min-width-tablet) {
+            font-size: 17px;
+        }
+
+        @media (min-width: $min-width-desktop) {
+            font-size: 18px;
+        }
 
         &::before {
             display: none;

@@ -1,7 +1,20 @@
 @use "../../assets/scss/variables_mixins.scss" as *;
 
 .cards {
-    @include flex-column-align-center;
+    @include flex-column;
+
+    @media (min-width: $min-width-desktop) {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    &__item {
+        @media (min-width: $min-width-desktop) {
+            width: calc(50% - 50px);
+        }
+    }
 
     &__title {
         color: $main-text-color;
@@ -13,6 +26,15 @@
         text-align: center;
         margin: 0 auto 5px;
         font-size: 14px;
+
+        @media (min-width: $min-width-tablet) {
+            font-size: 15px;
+        }
+
+        @media (min-width: $min-width-desktop) {
+            font-size: 16px;
+            height: 44px;
+        }
     }
 
     & a {
@@ -22,6 +44,10 @@
         background: linear-gradient(135deg, #ffffff 0%, #eaf2ff 100%);
         margin-bottom: 20px;
         width: 100%;
+
+        @media (min-width: $min-width-desktop) {
+            margin-bottom: 0;
+        }
 
         &:hover {
             border-color: $card-hover-color;
@@ -42,6 +68,7 @@
         @include flex-center(5px);
         flex-wrap: wrap;
         margin: 5px auto;
+        height: 60px;
 
         &--tag {
             color: $tag-text-color;
@@ -51,6 +78,14 @@
             padding: 4px 10px;
             border-radius: 999px;
             border: 1px solid $tag-border-color;
+
+            @media (min-width: $min-width-tablet) {
+                font-size: 13px;
+            }
+
+            @media (min-width: $min-width-desktop) {
+                font-size: 14px;
+            }
         }
     }
 }

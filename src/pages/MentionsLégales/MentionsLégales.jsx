@@ -6,9 +6,9 @@ function MentionsLégales() {
         window.scrollTo(0, 0)
     }, [])
     return (
-        <main>
+        <main className={styles["legalMentions"]}>
             <h1 className={styles["legalMention__title"]}>Mentions Légales</h1>
-            <section>
+            <section className={styles["legalMention__site"]}>
                 <h2>Editeur du site</h2>
                 <p>Nom : Kevin HECKENMEYER</p>
                 <p>Statut : Auto-entrepreneur</p>
@@ -17,7 +17,7 @@ function MentionsLégales() {
                 <p>Adresse du siège social : 2C Rue du Bubenstein 67310 WASSELONNE</p>
                 <p>Email : kevin.heckenmeyer@gmail.com</p>
             </section>
-            <section>
+            <section className={styles["legalMention__hosting"]}>
                 <h2>Hébergement</h2>
                 <p>
                     Hébergeur : GitHub Pages – GitHub Inc., 88 Colin P Kelly Jr St, San
@@ -80,7 +80,7 @@ function MentionsLégales() {
                     réglementation en vigueur.
                 </p>
             </section>
-            <section>
+            <section className={styles["legalMention__right"]}>
                 <h2>Droit applicable</h2>
                 <p>
                     Le présent site est soumis au droit français. En cas de litige, les

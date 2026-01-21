@@ -12,24 +12,26 @@ function Hero() {
             <p className={styles["hero__description"]}>
                 Intéressé par le développement en React
             </p>
-            <img
-                className={styles["hero__photo"]}
-                src={photo}
-                alt="Photo Kevin Heckenmeyer"
-            />
-            <div className={styles["hero__cta"]}>
-                <a href="#contact">
-                    <i className="fa-solid fa-envelope"></i>
-                    Me contacter
-                </a>
-                <a href="#projets">
-                    <i className="fa-solid fa-folder"></i>
-                    Voir mes projets
-                </a>
-                <a href={cv} download>
-                    <i className="fa-solid fa-download"></i>
-                    Télécharger mon CV
-                </a>
+            <div className={styles["hero__wrapper"]}>
+                <img
+                    className={styles["hero__photo"]}
+                    src={photo}
+                    alt="Photo Kevin Heckenmeyer"
+                />
+                <div className={styles["hero__cta"]}>
+                    <a href="#contact">
+                        <i className="fa-solid fa-envelope"></i>
+                        Me contacter
+                    </a>
+                    <a href="#projets">
+                        <i className="fa-solid fa-folder"></i>
+                        Voir mes projets
+                    </a>
+                    <a href={cv} download>
+                        <i className="fa-solid fa-download"></i>
+                        Télécharger mon CV
+                    </a>
+                </div>
             </div>
         </section>
     )

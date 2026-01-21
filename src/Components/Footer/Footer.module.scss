@@ -16,5 +16,13 @@ footer {
     p {
         color: #ffffff;
         font-size: 12px;
+
+        @media (min-width: $min-width-tablet) {
+            font-size: 13px;
+        }
+
+        @media (min-width: $min-width-desktop) {
+            font-size: 14px;
+        }
     }
 }

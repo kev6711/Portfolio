@@ -3,20 +3,56 @@
 .hero {
     @include flex-column(10px);
 
+    h1,
+    p {
+        text-align: center;
+    }
+
     &__description {
         color: $secondary-text-color;
         margin: 0;
+    }
+
+    &__wrapper {
+        @include flex-column(10px);
+
+        @media (min-width: $min-width-desktop) {
+            flex-direction: row;
+            justify-content: center;
+            gap: 60px;
+        }
     }
 
     &__photo {
         @include box-size(70%, 70%);
         margin: 10px auto;
         border-radius: 50%;
+
+        @media (min-width: $min-width-tablet) {
+            border-radius: 0%;
+            height: 400px;
+            object-fit: contain;
+        }
+
+        @media (min-width: $min-width-desktop) {
+            margin: 10px 0;
+            width: unset;
+        }
     }
 
     &__cta {
         @include flex-column-align-center(10px);
         margin-top: 10px;
+
+        @media (min-width: $min-width-tablet) {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        @media (min-width: $min-width-desktop) {
+            flex-direction: column;
+            gap: 30px;
+        }
 
         a {
             @include box-size(65%, 30px);
@@ -27,6 +63,20 @@
             border-radius: 20px;
             font-size: 14px;
             cursor: pointer;
+
+            @media (min-width: $min-width-tablet) {
+                width: 28%;
+                font-size: 15px;
+
+                @media (min-width: $min-width-desktop) {
+                    @include box-size(100%, 40px);
+                    padding-right: 5px;
+                }
+            }
+
+            @media (min-width: $min-width-desktop) {
+                font-size: 16px;
+            }
 
             &:hover {
                 background-color: $cta-hover-background-color;

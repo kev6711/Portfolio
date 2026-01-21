@@ -32,6 +32,10 @@ header {
     display: block;
     height: 80px;
 
+    @media (min-width: $min-width-desktop) {
+        @include flex-center;
+    }
+
     &__list {
         @include flex-column-center(40px);
         position: fixed;
@@ -41,6 +45,18 @@ header {
         background-color: $primary-color;
         visibility: hidden;
         transition: all 800ms ease-out;
+
+        @media (min-width: $min-width-desktop) {
+            position: unset;
+            width: auto;
+            height: auto;
+            visibility: visible;
+            background-color: transparent;
+            flex-direction: row;
+            gap: 23px;
+            padding-right: 4rem;
+            transition: none;
+        }
 
         &--item {
             position: relative;
@@ -53,6 +69,10 @@ header {
                 transform: translateX(-50%);
                 @include box-size(20px, 2px);
                 background-color: #ffffff;
+
+                @media (min-width: $min-width-desktop) {
+                    display: none;
+                }
             }
 
             &:last-child::after {
@@ -64,6 +84,14 @@ header {
             display: block;
             font-size: 22px;
             color: #ffffff;
+
+            @media (min-width: $min-width-desktop) {
+                font-size: 17px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 
@@ -78,6 +106,7 @@ header {
 
         @media (min-width: $min-width-desktop) {
             right: 2rem;
+            display: none;
         }
 
         &--bar,

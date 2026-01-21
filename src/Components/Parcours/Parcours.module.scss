@@ -21,6 +21,15 @@
             color: $secondary-text-color;
             text-align: justify;
             padding-left: 25px;
+            font-size: 16px;
+
+            @media (min-width: $min-width-tablet) {
+                font-size: 17px;
+            }
+
+            @media (min-width: $min-width-desktop) {
+                font-size: 18px;
+            }
 
             &::before {
                 font-family: "Font Awesome 6 Free";
@@ -29,6 +38,14 @@
                 top: 2px;
                 left: 0;
                 color: $primary-color;
+
+                @media (min-width: $min-width-tablet) {
+                    font-size: 15px;
+                }
+
+                @media (min-width: $min-width-desktop) {
+                    font-size: 16px;
+                }
             }
         }
     }
