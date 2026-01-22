@@ -7,12 +7,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function AppRouter() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/Portfolio">
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/projet/:id" element={<Projet />} />
                 <Route path="/mentions-legales" element={<MentionsLégales />} />
+                <Route path="*" element={<Home />} />
             </Routes>
             <Footer />
         </BrowserRouter>

@@ -15,7 +15,9 @@ function Projet() {
             <section className={styles.hero}>
                 <h1>{projet.title}</h1>
                 <p>{projet.description}</p>
-                <img src={projet.cover} alt={projet.title}></img>
+                <img
+                    src={`${import.meta.env.BASE_URL}${projet.cover}`}
+                    alt={projet.title}></img>
                 <div className={styles["hero__cta"]}>
                     <a href={projet.dépôtGithub} target="_blank">
                         <i className="fa-brands fa-github"></i>

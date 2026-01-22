@@ -2,7 +2,7 @@
     {
         "id": "1",
         "title": "ohmyfood",
-        "cover": "/images/ohmyfood_1.jpg",
+        "cover": "images/ohmyfood_1.jpg",
         "description": "Site mobile-first et responsive construit avec Sass",
         "contexte": "OhMyFood, jeune startup déjà implantée à New York, souhaite s’étendre à Paris avec un site permettant de consulter et composer des menus gastronomiques avant l’arrivée au restaurant.\n L’entreprise doit convaincre de nouveaux restaurateurs en proposant une plateforme moderne, rapide et fiable.\n Le projet nécessite de respecter des maquettes fournies par l’UX designer et d’assurer une expérience utilisateur optimale sur mobile, tablette et desktop.",
         "objectifs": [
@@ -12,14 +12,7 @@
             "Intégrer des animations CSS fluides et cohérentes avec le prototype Figma.",
             "Assurer une performance optimale sur mobile, où se situe le cœur de l’usage."
         ],
-        "stack": [
-            "HTML5",
-            "CSS3",
-            "Sass",
-            "Figma",
-            "Mobile-first",
-            "Github"
-        ],
+        "stack": ["HTML5", "CSS3", "Sass", "Figma", "Mobile-first", "Github"],
         "compétences": [
             "Structurer un projet complet en Sass avec variables, mixins et architecture claire.",
             "Implémenter des animations CSS modernes reproduisant fidèlement un prototype Figma.",
@@ -44,7 +37,7 @@
     {
         "id": "2",
         "title": "Sophie Bluel",
-        "cover": "/images/sophie_bluel_1.png",
+        "cover": "images/sophie_bluel_1.png",
         "description": "Portfolio d’architecte d’intérieur : intégration JavaScript et fonctionnalités dynamiques",
         "contexte": "Au sein de l’agence digitale ArchiWebos (50 salariés), le projet consiste à concevoir et développer le site portfolio d’une architecte d’intérieur. Le projet inclut des enjeux de présentation professionnelle, de gestion de contenu par l’administrateur et de cohérence entre design Figma, front-end et back-end.",
         "objectifs": [
@@ -54,14 +47,7 @@
             "Ajouter une modale d’upload de photos (création de zéro).",
             "Connecter ces fonctionnalités au back-end fourni (gestion des données, login sécurisé, mise à jour dynamique)."
         ],
-        "stack": [
-            "HTML5",
-            "CSS3",
-            "Javascript",
-            "API",
-            "Figma",
-            "Github"
-        ],
+        "stack": ["HTML5", "CSS3", "Javascript", "API", "Figma", "Github"],
         "compétences": [
             "Intégration d’une maquette Figma dans du code existant.",
             "Implémentation d’un système de login (gestion d’erreurs, formulaire, tokens, redirection).",
@@ -79,13 +65,12 @@
             "Mettre en place des tests unitaires ou fonctionnels pour fiabiliser l’application.",
             "Optimiser les performances (compression images, lazy loading)."
         ],
-        "dépôtGithub": "https://github.com/kev6711/Projet6_portfolio_architecte_sophie_bluel.git",
-        "githubPages": "https://kev6711.github.io/Projet6_portfolio_architecte_sophie_bluel/"
+        "dépôtGithub": "https://github.com/kev6711/Projet6_portfolio_architecte_sophie_bluel.git"
     },
     {
         "id": "3",
         "title": "Nina Carducci",
-        "cover": "/images/nina_carducci_1.webp",
+        "cover": "images/nina_carducci_1.webp",
         "description": "Optimisation complète d'un site : performances, accessibilité, SEO et visibilité locale",
         "contexte": "En tant que développeur freelance, j’observe que le site de Nina Carducci, photographe professionnelle, présente des problèmes majeurs de performance et de référencement. Après un audit initial, Nina me confie une mission complète d’optimisation technique, SEO, accessibilité et performances pour améliorer sa visibilité en ligne, attirer plus de clients et réduire le temps de chargement actuel de son site.",
         "objectifs": [
@@ -131,7 +116,7 @@
     {
         "id": "4",
         "title": "ArgentBank",
-        "cover": "/images/argentbank_1.jpg",
+        "cover": "images/argentbank_1.jpg",
         "description": "Dashboard React/Redux avec authentification sécurisée et conception d’API transactions",
         "contexte": "Argent Bank, une nouvelle banque en ligne veut se faire une place sur un marché très concurrentiel. L’enjeu immédiat est de mettre en place le tableau de bord utilisateur avec un système d’authentification fiable, sécurisé et évolutif, tout en respectant des délais serrés. Parallèlement, l’équipe prépare déjà la phase 2 autour des transactions, pour laquelle on me demande aussi un avis de conception d’API (modélisation des routes côté back-end, via Swagger).",
         "objectifs": [
