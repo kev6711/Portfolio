@@ -27,7 +27,7 @@ function Hero() {
                         <i className="fa-solid fa-folder"></i>
                         Voir mes projets
                     </a>
-                    <a href={cv} download>
+                    <a href={cv} download aria-label="Télécharger mon CV au format PDF">
                         <i className="fa-solid fa-download"></i>
                         Télécharger mon CV
                     </a>

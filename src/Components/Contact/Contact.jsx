@@ -8,15 +8,20 @@ function Contact() {
             <div className={styles["contact__icons"]}>
                 <a
                     href="https://mail.google.com/mail/?view=cm&fs=1&to=kevin.heckenmeyer@gmail.com"
-                    target="_blank">
+                    target="_blank"
+                    aria-label="Envoyer mail avec gmail">
                     <i className="fa-solid fa-envelope"></i>
                 </a>
                 <a
                     href="https://fr.linkedin.com/in/kevin-heckenmeyer-9a4b9b101"
-                    target="_blank">
+                    target="_blank"
+                    aria-label="Voir mon profil LinkedIn">
                     <i className="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/kev6711" target="_blank">
+                <a
+                    href="https://github.com/kev6711"
+                    target="_blank"
+                    aria-label="Voir mon profil Github">
                     <i className="fa-brands fa-github"></i>
                 </a>
             </div>

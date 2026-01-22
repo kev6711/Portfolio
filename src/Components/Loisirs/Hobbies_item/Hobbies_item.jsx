@@ -5,7 +5,7 @@ function Hobbies_item({ icon, description, comment }) {
         <>
             <div className={styles["hobbies__item"]}>
                 {icon}
-                <p className={styles["hobbies__item--description"]}>{description}</p>
+                <h3 className={styles["hobbies__item--description"]}>{description}</h3>
             </div>
             <p className={styles["hobbies__item--comment"]}>{comment}</p>
         </>

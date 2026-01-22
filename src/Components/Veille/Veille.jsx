@@ -49,7 +49,8 @@ function Veille() {
                         <button
                             className={index === i ? styles.isActive : ""}
                             key={index}
-                            onClick={() => setI(index)}></button>
+                            onClick={() => setI(index)}
+                            aria-label={`Aller à la diapositive ${index + 1}`}></button>
                     ))}
                 </div>
             </div>

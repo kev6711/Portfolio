@@ -93,7 +93,8 @@ function Header() {
                         </ul>
                         <button
                             className={styles["navbar__burger"]}
-                            onClick={handleisOpen}>
+                            onClick={handleisOpen}
+                            aria-label="Menu de navigation - menu type burger">
                             <span className={styles["navbar__burger--bar"]}></span>
                         </button>
                     </nav>
