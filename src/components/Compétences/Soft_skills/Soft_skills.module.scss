@@ -1,0 +1,10 @@
+@use "../../../assets/scss/variables_mixins.scss" as *;
+
+.soft-skills__items {
+    @include flex-align-center(10px);
+
+    &--icon {
+        color: $primary-color;
+        font-size: 22px;
+    }
+}

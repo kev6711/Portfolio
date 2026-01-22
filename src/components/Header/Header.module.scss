@@ -1,0 +1,157 @@
+@use "../../assets/scss/variables_mixins.scss" as *;
+
+header {
+    position: fixed;
+    @include flex-space-between-center;
+    width: 100%;
+    background-color: $primary-color;
+    padding-left: 1rem;
+    z-index: 300;
+
+    @media (min-width: $min-width-desktop) {
+        padding-left: 2rem;
+    }
+
+    img {
+        @include box-size(80px, 80px);
+    }
+
+    .backArrowlink {
+        @include flex-center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        :global(.fa-solid) {
+            font-size: 35px;
+            color: #ffffff;
+        }
+    }
+}
+
+.navbar {
+    display: block;
+    height: 80px;
+
+    @media (min-width: $min-width-desktop) {
+        @include flex-center;
+    }
+
+    &__list {
+        @include flex-column-center(40px);
+        position: fixed;
+        right: -100vw;
+        bottom: 0;
+        @include box-size(100vw, 100vh);
+        background-color: $primary-color;
+        visibility: hidden;
+        transition: all 800ms ease-out;
+
+        @media (min-width: $min-width-desktop) {
+            position: unset;
+            width: auto;
+            height: auto;
+            visibility: visible;
+            background-color: transparent;
+            flex-direction: row;
+            gap: 23px;
+            padding-right: 4rem;
+            transition: none;
+        }
+
+        &--item {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: -20px;
+                transform: translateX(-50%);
+                @include box-size(20px, 2px);
+                background-color: #ffffff;
+
+                @media (min-width: $min-width-desktop) {
+                    display: none;
+                }
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+        }
+
+        &--link {
+            display: block;
+            font-size: 22px;
+            color: #ffffff;
+
+            @media (min-width: $min-width-desktop) {
+                font-size: 17px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__burger {
+        display: block;
+        position: fixed;
+        @include box-size(40px, 30px);
+        top: 1.5rem;
+        right: 1rem;
+        @include reset-button-style;
+        z-index: 200;
+
+        @media (min-width: $min-width-desktop) {
+            right: 2rem;
+            display: none;
+        }
+
+        &--bar,
+        &--bar::before,
+        &--bar::after {
+            display: block;
+            @include box-size(100%, 3px);
+            position: relative;
+            border-radius: 3px;
+            background-color: #ffffff;
+            transition: all 500ms ease-in-out;
+        }
+
+        &--bar::before,
+        &--bar::after {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        &--bar::before {
+            transform: translateY(-12px);
+        }
+
+        &--bar::after {
+            transform: translateY(12px);
+        }
+    }
+}
+
+.show-nav .navbar__list {
+    right: 0;
+    width: 100vw;
+    visibility: visible;
+    z-index: 100;
+}
+
+.show-nav .navbar__burger--bar {
+    background: transparent;
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}

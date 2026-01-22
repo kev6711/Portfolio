@@ -1,0 +1,28 @@
+@use "../../assets/scss/variables_mixins.scss" as *;
+
+footer {
+    @include flex-column-center;
+    font-size: 12px;
+    background-color: #0f172a;
+
+    .footer__legalMention {
+        color: #ffffff;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        color: #ffffff;
+        font-size: 12px;
+
+        @media (min-width: $min-width-tablet) {
+            font-size: 13px;
+        }
+
+        @media (min-width: $min-width-desktop) {
+            font-size: 14px;
+        }
+    }
+}

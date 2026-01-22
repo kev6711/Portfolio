@@ -1,0 +1,67 @@
+@use "../../assets/scss/variables_mixins.scss" as *;
+
+.career {
+    h3 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: #2563eb;
+        padding: 10px;
+        border-radius: 5px;
+        color: #ffffff;
+    }
+
+    &__training,
+    &__experience {
+        @include flex-column(20px);
+        margin-bottom: 40px;
+
+        li {
+            position: relative;
+            color: $secondary-text-color;
+            padding-left: 25px;
+            font-size: 16px;
+
+            @media (min-width: $min-width-tablet) {
+                font-size: 17px;
+            }
+
+            @media (min-width: $min-width-desktop) {
+                font-size: 18px;
+            }
+
+            &::before {
+                font-family: "Font Awesome 6 Free";
+                @include text-font(900, 14px);
+                position: absolute;
+                top: 2px;
+                left: 0;
+                color: $primary-color;
+
+                @media (min-width: $min-width-tablet) {
+                    font-size: 15px;
+                }
+
+                @media (min-width: $min-width-desktop) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &__training {
+        li {
+            &::before {
+                content: "\f19d";
+            }
+        }
+    }
+
+    &__experience {
+        li {
+            &::before {
+                content: "\f0b1";
+            }
+        }
+    }
+}
