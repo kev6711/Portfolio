@@ -85,11 +85,17 @@ header {
             font-size: 22px;
             color: #ffffff;
 
+            &:hover {
+                font-weight: bold;
+            }
+
             @media (min-width: $min-width-desktop) {
                 font-size: 17px;
 
                 &:hover {
                     text-decoration: underline;
+                    text-underline-offset: 5px;
+                    text-decoration-thickness: 2px;
                 }
             }
         }

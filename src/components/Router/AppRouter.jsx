@@ -3,11 +3,11 @@ import Projet from "../../pages/Projet/Projet.jsx"
 import MentionsLégales from "../../pages/MentionsLégales/MentionsLégales.jsx"
 import Header from "../Header/Header.jsx"
 import Footer from "../Footer/Footer.jsx"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 
 function AppRouter() {
     return (
-        <BrowserRouter basename="/Portfolio">
+        <HashRouter>
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -16,7 +16,7 @@ function AppRouter() {
                 <Route path="*" element={<Home />} />
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

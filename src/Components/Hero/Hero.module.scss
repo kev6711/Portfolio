@@ -24,12 +24,17 @@
     }
 
     &__photo {
-        @include box-size(70%, 70%);
+        content: url("../../assets/images/photo_kh_portrait.png");
+        height: 300px;
         margin: 10px auto;
-        border-radius: 50%;
+        border-radius: 4%;
+        object-fit: cover;
+        box-shadow:
+            0 10px 25px rgba(0, 0, 0, 0.12),
+            0 8px 20px rgba(37, 99, 235, 0.28);
 
         @media (min-width: $min-width-tablet) {
-            border-radius: 0%;
+            content: url("../../assets/images/photo_kh_paysage.png");
             height: 400px;
             object-fit: contain;
         }

@@ -1,6 +1,6 @@
 import styles from "./Hero.module.scss"
 import cv from "../../assets/data/cv_integrateur_web.pdf"
-import photo from "../../assets/images/photo_kh.jpg"
+import photo from "../../assets/images/photo_kh_portrait.png"
 
 function Hero() {
     return (
