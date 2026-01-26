@@ -1,5 +1,5 @@
 import styles from "./Header.module.scss"
-import logo from "../../assets/images/logo_transparent.png"
+import logo from "../../assets/images/compressed/logo_transparent_mobile.webp"
 import { useState } from "react"
 import { useLocation, Link } from "react-router-dom"
 
@@ -15,7 +15,10 @@ function Header() {
     return (
         <header>
             {isProjectPage || isLegalMentionPage ? (
-                <Link to="/" className={styles.backArrowlink}>
+                <Link
+                    to="/#hero"
+                    className={styles.backArrowlink}
+                    aria-label="Retour à la page d'accueil">
                     <i className="fa-solid fa-arrow-left"></i>
                 </Link>
             ) : (

@@ -1,7 +1,7 @@
 import styles from "./Veille.module.scss"
 import { useState, useEffect } from "react"
 import slideshow from "../../assets/data/slideshow.json"
-import technologicalCardImage from "../../assets/images/card_veille_technologique.png"
+import technologicalCardImage from "../../assets/images/compressed/card_veille_technologique_mobile.webp"
 
 function Veille() {
     const [i, setI] = useState(0)
@@ -33,6 +33,7 @@ function Veille() {
                         className={styles["technological-watch__card--image"]}
                         src={technologicalCardImage}
                         alt="illustration développmement web"
+                        loading="lazy"
                     />
                     <h3 className={styles["technological-watch__card--title"]}>
                         {slideshow[i].title}

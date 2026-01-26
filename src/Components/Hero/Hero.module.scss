@@ -24,7 +24,7 @@
     }
 
     &__photo {
-        content: url("../../assets/images/photo_kh_portrait.png");
+        content: url("../../assets/images/compressed/photo_kh_portrait_mobile.webp");
         height: 300px;
         margin: 10px auto;
         border-radius: 4%;
@@ -34,7 +34,7 @@
             0 8px 20px rgba(37, 99, 235, 0.28);
 
         @media (min-width: $min-width-tablet) {
-            content: url("../../assets/images/photo_kh_paysage.png");
+            content: url("../../assets/images/compressed/photo_kh_paysage.webp");
             height: 400px;
             object-fit: contain;
         }

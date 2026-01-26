@@ -3,7 +3,7 @@
 footer {
     @include flex-column-center;
     font-size: 12px;
-    background-color: #0f172a;
+    background-color: $footer-background-color;
 
     .footer__legalMention {
         color: #ffffff;

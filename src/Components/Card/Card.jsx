@@ -15,6 +15,7 @@ function Card() {
                                 className={styles["card__cover"]}
                                 src={`${import.meta.env.BASE_URL}${project.cover}`}
                                 alt={project.title}
+                                loading="lazy"
                             />
                             <div className={styles["card__tags"]}>
                                 {project.stack.map((tag, index) => (

@@ -5,7 +5,7 @@
         text-align: center;
         margin-top: 30px;
         margin-bottom: 30px;
-        background-color: #2563eb;
+        background-color: $primary-color;
         padding: 10px;
         border-radius: 5px;
         color: #ffffff;
@@ -31,7 +31,7 @@
             }
 
             &::before {
-                font-family: "Font Awesome 6 Free";
+                font-family: "Font Awesome 7 Free";
                 @include text-font(900, 14px);
                 position: absolute;
                 top: 2px;

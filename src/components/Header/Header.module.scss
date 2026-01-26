@@ -48,8 +48,7 @@ header {
 
         @media (min-width: $min-width-desktop) {
             position: unset;
-            width: auto;
-            height: auto;
+            @include box-size(auto, auto);
             visibility: visible;
             background-color: transparent;
             flex-direction: row;

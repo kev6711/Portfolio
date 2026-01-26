@@ -91,12 +91,12 @@ p {
 
         &::before {
             content: "\f140";
-            font-family: "Font Awesome 6 Free";
+            font-family: "Font Awesome 7 Free";
             @include text-font(900, 14px);
             position: absolute;
             top: 3px;
             left: 0;
-            color: #1e3a8a;
+            color: $tag-text-color;
 
             @media (min-width: $min-width-tablet) {
                 font-size: 15px;

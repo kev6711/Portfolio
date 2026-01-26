@@ -1,6 +1,6 @@
 import styles from "./Hero.module.scss"
 import cv from "../../assets/data/cv_integrateur_web.pdf"
-import photo from "../../assets/images/photo_kh_portrait.png"
+import photo_mobile from "../../assets/images/compressed/photo_kh_portrait_mobile.webp"
 
 function Hero() {
     return (
@@ -15,8 +15,10 @@ function Hero() {
             <div className={styles["hero__wrapper"]}>
                 <img
                     className={styles["hero__photo"]}
-                    src={photo}
+                    src={photo_mobile}
                     alt="Photo Kevin Heckenmeyer"
+                    fetchpriority="high"
+                    decoding="async"
                 />
                 <div className={styles["hero__cta"]}>
                     <a href="#contact">

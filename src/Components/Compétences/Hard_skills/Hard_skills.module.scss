@@ -22,7 +22,7 @@
         }
 
         :global(.fa-solid.fa-star).active {
-            color: #60a5fa;
+            color: $fa-star-active-color;
         }
     }
 }
