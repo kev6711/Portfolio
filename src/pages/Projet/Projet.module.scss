@@ -29,6 +29,7 @@
     img {
         @include box-size(100%, 300px);
         object-fit: cover;
+        border-radius: 23px;
     }
 
     &__cta {

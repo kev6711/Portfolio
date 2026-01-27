@@ -1,11 +1,11 @@
 import styles from "./Header.module.scss"
 import logo from "../../assets/images/compressed/logo_transparent_mobile.webp"
 import { useState } from "react"
-import { useLocation, Link } from "react-router-dom"
+import { useLocation, Link, useMatch } from "react-router-dom"
 
 function Header() {
     const pathname = useLocation().pathname
-    const isProjectPage = pathname.startsWith("/projet")
+    const isProjectPage = useMatch("/projet/:id")
     const isLegalMentionPage = pathname.startsWith("/mentions-legales")
     const [isOpen, setIsOpen] = useState(false)
 

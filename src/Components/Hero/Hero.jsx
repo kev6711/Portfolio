@@ -17,7 +17,7 @@ function Hero() {
                     className={styles["hero__photo"]}
                     src={photo_mobile}
                     alt="Photo Kevin Heckenmeyer"
-                    fetchpriority="high"
+                    fetchPriority="high"
                     decoding="async"
                 />
                 <div className={styles["hero__cta"]}>
