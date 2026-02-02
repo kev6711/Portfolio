@@ -13,7 +13,7 @@ function Contact() {
                     <i className="fa-solid fa-envelope"></i>
                 </a>
                 <a
-                    href="https://fr.linkedin.com/in/kevin-heckenmeyer-9a4b9b101"
+                    href="https://fr.linkedin.com/in/kevin-heckenmeyer-3390893a0"
                     target="_blank"
                     aria-label="Voir mon profil LinkedIn">
                     <i className="fa-brands fa-linkedin"></i>
